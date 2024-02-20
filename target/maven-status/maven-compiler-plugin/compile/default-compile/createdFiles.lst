@@ -1,0 +1,7 @@
+com\example\mazebank\Models\Model.class
+com\example\mazebank\Controllers\Admin\AdminController.class
+com\example\mazebank\Controllers\Client\ClientController.class
+com\example\mazebank\Views\ViewFactory.class
+module-info.class
+com\example\mazebank\App.class
+com\example\mazebank\Controllers\LoginController.class
