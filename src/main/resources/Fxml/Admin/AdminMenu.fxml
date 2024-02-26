@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0"
+      prefWidth="180.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.mazebank.Controllers.Admin.AdminMenuController">
+   <opaqueInsets>
+      <Insets/>
+   </opaqueInsets>
+   <AnchorPane prefHeight="730.0" prefWidth="160.0" styleClass="left_container"
+               stylesheets="@../../Styles/ClientMenu.css">
+      <VBox layoutX="30.0" layoutY="14.0" prefHeight="80.0" prefWidth="160.0" styleClass="title_container"
+            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <FontAwesomeIconView glyphName="BANK" size="30" strokeType="OUTSIDE" strokeWidth="0.0"
+                              wrappingWidth="25.279296875"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Maze Bank"/>
+      </VBox>
+      <VBox layoutX="40.0" layoutY="132.0" prefHeight="408.0" prefWidth="180.0" AnchorPane.leftAnchor="0.0"
+            AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="132.0">
+         <styleClass>
+            <String fx:value="title_container"/>
+            <String fx:value="menu_container"/>
+         </styleClass>
+         <Button fx:id="create_client_btn" mnemonicParsing="false" text="Create Client ">
+            <graphic>
+               <FontAwesomeIconView glyphName="PLUS" size="20" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            </graphic>
+         </Button>
+         <Button mnemonicParsing="false" text="Cliants">
+            <graphic>
+               <FontAwesomeIconView fx:id="clients_btn" glyphName="LIST" size="20" strokeType="OUTSIDE"
+                                    strokeWidth="0.0"/>
+            </graphic>
+         </Button>
+         <Button fx:id="deposit_btn" mnemonicParsing="false" text="Deposit">
+            <graphic>
+               <FontAwesomeIconView glyphName="MONEY" size="20" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            </graphic>
+         </Button>
+         <Button fx:id="logout_btn" mnemonicParsing="false" styleClass="alt_menu_btn"
+                 stylesheets="@../../Styles/ClientMenu.css" text="Logout">
+            <graphic>
+               <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" strokeType="OUTSIDE" strokeWidth="0.0"/>
+            </graphic>
+         </Button>
+      </VBox>
+   </AnchorPane>
+</VBox>
