@@ -1,22 +1,26 @@
 package com.example.mazebank.Controllers.Client;
 
-import javafx.fxml.FXML;
+
+import com.example.mazebank.Models.Model;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ClientController implements Initializable {
-    private Button accounts_btn;
-    private Button dashboard_btn;
-    private Button logout_btn;
-    private Button profile_btn;
-    private Button report_btn;
-    private Button transaction_btn;
+
+    public BorderPane client_parent;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
+            if (newVal.equals("Transactions")) {
+                client_parent.setCenter(Model.getInstance().getViewFactory().getTransactionsView());
+            } else {
+                client_parent.setCenter(Model.getInstance().getViewFactory().getDashboardView());
+            }
+        });
     }
 }
