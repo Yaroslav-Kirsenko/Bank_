@@ -1,5 +1,6 @@
 package com.example.mazebank.Controllers.Admin;
 
+import com.example.mazebank.Models.Model;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -22,7 +23,7 @@ public class AdminMenuController implements Initializable {
 
     private void onCreateClient()
     {
-        Model.getInstance().getViewFactory().getAdminSelecredMenuItem().set("CreateClient")
+        Model.getInstance().getViewFactory().getAdminSelecredMenuItem().set("CreateClient");
     }
 
 }

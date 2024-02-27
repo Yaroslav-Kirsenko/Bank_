@@ -25,6 +25,7 @@ public class ClientMenuController implements Initializable {
     private void addListeners() {
         dashboard_btn.setOnAction(actionEvent -> onDashboard());
         transaction_btn.setOnAction(actionEvent -> onTransactions());
+        accounts_btn.setOnAction(actionEvent -> onAccounts());
     }
 
     private void onTransactions(){
@@ -33,5 +34,9 @@ public class ClientMenuController implements Initializable {
 
     private void onDashboard(){
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Dashboard");
+}
+
+private void onAccounts() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Accounts");
 }
 }

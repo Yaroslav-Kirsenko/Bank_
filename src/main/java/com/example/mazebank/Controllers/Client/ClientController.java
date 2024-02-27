@@ -18,7 +18,9 @@ public class ClientController implements Initializable {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
             if (newVal.equals("Transactions")) {
                 client_parent.setCenter(Model.getInstance().getViewFactory().getTransactionsView());
-            } else {
+            } else if (newVal.equals("Accounts")) {
+                client_parent.setCenter(Model.getInstance().getViewFactory().getAccountView());
+            } else{
                 client_parent.setCenter(Model.getInstance().getViewFactory().getDashboardView());
             }
         });
