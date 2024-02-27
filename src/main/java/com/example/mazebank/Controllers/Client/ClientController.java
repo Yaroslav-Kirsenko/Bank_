@@ -2,6 +2,7 @@ package com.example.mazebank.Controllers.Client;
 
 
 import com.example.mazebank.Models.Model;
+import com.example.mazebank.Views.ClientMenuOptions;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
 
@@ -16,9 +17,9 @@ public class ClientController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Model.getInstance().getViewFactory().getClientSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
-            if (newVal.equals("Transactions")) {
+            if (newVal.equals(ClientMenuOptions.TRANSACTIONS)) {
                 client_parent.setCenter(Model.getInstance().getViewFactory().getTransactionsView());
-            } else if (newVal.equals("Accounts")) {
+            } else if (newVal.equals(ClientMenuOptions.ACCOUNTS)) {
                 client_parent.setCenter(Model.getInstance().getViewFactory().getAccountView());
             } else{
                 client_parent.setCenter(Model.getInstance().getViewFactory().getDashboardView());

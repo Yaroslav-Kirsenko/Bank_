@@ -32,9 +32,9 @@
                <FontAwesomeIconView glyphName="PLUS" size="20" strokeType="OUTSIDE" strokeWidth="0.0"/>
             </graphic>
          </Button>
-         <Button mnemonicParsing="false" text="Cliants">
+         <Button fx:id="clients_btn" mnemonicParsing="false" text="Clients">
             <graphic>
-               <FontAwesomeIconView fx:id="clients_btn" glyphName="LIST" size="20" strokeType="OUTSIDE"
+               <FontAwesomeIconView glyphName="LIST" size="20" strokeType="OUTSIDE"
                                     strokeWidth="0.0"/>
             </graphic>
          </Button>

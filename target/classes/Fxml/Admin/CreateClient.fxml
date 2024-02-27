@@ -4,30 +4,31 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mazebank.Controllers.Admin.AdminController">
-   <children>
-      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Client Account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
-      <VBox fillWidth="false" layoutX="14.0" layoutY="38.0" prefHeight="700.0" prefWidth="600.0"
-            stylesheets="@../../Styles/ClientMenu.css">
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name"/>
-         <TextField fx:id="fName_fld"/>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name"/>
-         <TextField fx:id="lName_fld"/>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:"/>
-         <TextField fx:id="password_fld"/>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Payee Adress:"/>
-         <CheckBox fx:id="pAdress_box" mnemonicParsing="false"/>
-         <Label fx:id="pAdress_lbl" styleClass="payee_address_lbl" stylesheets="@../../Styles/CreateClient.css"
-                text="Label"/>
-         <CheckBox fx:id="ch_acc_box" mnemonicParsing="false" text="Add Cheking Account "/>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cheking Account Baance:"/>
-         <TextField fx:id="ch_amount_fld"/>
-         <CheckBox fx:id="sv_acc_box" layoutX="10.0" layoutY="188.0" mnemonicParsing="false"
-                   text="Add Saving Account "/>
-         <Text layoutX="10.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saving Account Balance:"/>
-         <TextField fx:id="sv_amoult_fld" layoutX="10.0" layoutY="109.0"/>
-         <Button fx:id="create_client_btn" mnemonicParsing="false" text="Create New Client "/>
-         <Label fx:id="error_lbl" layoutX="10.0" layoutY="173.0" text="Error:"/>
-      </VBox>
-   </children>
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container"
+            stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mazebank.Controllers.Admin.CreateClientController">
+   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Client Account"
+         AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0"/>
+   <VBox fillWidth="false" layoutX="14.0" layoutY="38.0" prefHeight="700.0" prefWidth="600.0"
+         stylesheets="@../../Styles/ClientMenu.css">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name"/>
+      <TextField fx:id="fName_fld"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name"/>
+      <TextField fx:id="lName_fld"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password:"/>
+      <TextField fx:id="password_fld"/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Payee Adress:"/>
+      <CheckBox fx:id="pAdress_box" mnemonicParsing="false"/>
+      <Label fx:id="pAdress_lbl" styleClass="payee_address_lbl" stylesheets="@../../Styles/CreateClient.css"
+             text="Label"/>
+      <CheckBox fx:id="ch_acc_box" mnemonicParsing="false" text="Add Cheking Account "/>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cheking Account Baance:"/>
+      <TextField fx:id="ch_amount_fld"/>
+      <CheckBox fx:id="sv_acc_box" layoutX="10.0" layoutY="188.0" mnemonicParsing="false"
+                text="Add Saving Account "/>
+      <Text layoutX="10.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saving Account Balance:"/>
+      <TextField fx:id="sv_amoult_fld" layoutX="10.0" layoutY="109.0"/>
+      <Button fx:id="create_client_btn" mnemonicParsing="false" text="Create New Client "/>
+      <Label fx:id="error_lbl" layoutX="10.0" layoutY="173.0" text="Error:"/>
+   </VBox>
 </AnchorPane>
