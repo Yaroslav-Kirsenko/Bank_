@@ -29,7 +29,7 @@ public class Client {
     public StringProperty payeeAddressProperty() {return payeeAddress;}
     public ObjectProperty<Account> checkingAccountProperty() {return checkingAccount;}
     public ObjectProperty<Account> savingAccountProperty() {return savingsAccount;}
-    public ObjectProperty<LocalDate> dateCreatedProperty() {return dateCreated;}
+    public ObjectProperty<LocalDate> dateProperty() {return dateCreated;}
 
 
 }
